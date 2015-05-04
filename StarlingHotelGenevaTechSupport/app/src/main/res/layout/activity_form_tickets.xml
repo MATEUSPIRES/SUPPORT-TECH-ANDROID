@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:id="@+id/relative_layout_form_tickets"
+    tools:context="com.geneva.hotel.starling.starlinghotelgenevatechsupport.FormTicketsActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logofile"/>
+    <TextView android:text="@string/description" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptionTxtView"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="@string/exemple_description"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:nextFocusRight="@+id/lieuEditText"
+            android:nextFocusDown="@+id/lieuEditText"
+            />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logolocation"/>
+        <TextView android:text="@string/lieu" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lieuTxtView"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/lieuEditText"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:hint="@string/exemple_lieu"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:nextFocusLeft="@+id/descriptionEditText"
+        />
+    <Button
+        android:id="@+id/descriptionButton"
+        android:layout_marginTop="10dp"
+        android:text="@string/submit_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logorepair"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

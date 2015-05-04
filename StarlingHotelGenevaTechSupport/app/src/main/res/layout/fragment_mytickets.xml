@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hotel.starling.connectedhotelmaintenance.fragments.AdminFragment"
+    android:id="@+id/container">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <CheckBox
+        android:id="@+id/checkBoxTickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/displayOnlyCreated"
+        />
+
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:text="@string/my_tickets_title"
+        android:id="@+id/txtMyTicketsTitle"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:id="@+id/listViewTickets"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</FrameLayout>
